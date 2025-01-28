@@ -20,6 +20,8 @@ Ein **Struct** ist dabei ein benutzerdefinierter Datentyp, mit welchem man mehre
 
 Über einigen Structs steht dabei auch `#[derive(...)]`. Dies ist ein Attribut, womit Rust signalisiert wird, welche bestimmten Standard-Implementierungen („Ableitungen“), wie z.B. Kopieren (Clone) eines Structs, generiert werden sollen. Sie sind sehr ähnlich zu Dekoratoren in Python.
 
+An einigen Punkten wurde auch Datenstrukturen wie `Enums` genutzt. Dies ist ersichtlich im UML an z.B. `Zeichenkette/Difficulty Enum`.
+
 ## Verwendung
 
 ```bash
