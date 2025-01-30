@@ -16,7 +16,8 @@ In Rust wurde dies in großen Teilen sehr passend zum UML implementiert.
 
 Die Vererbung wurde mit einem `Combatant` Trait und einem `Entity` Struct umgesetzt. Dabei ist ein **Trait** in Rust im Wesentlichen ein Sammlungsschema von Methoden und zugehörigen (ggf. Standard-)Implementationen, den ein Typ erfüllen muss. Methoden können dabei auch überschrieben werden (Polyphormie). Die `Monster`, `Fighter` und `Mage` Structs haben dabei diesen Trait implementiert und jeweils als ein Attribut `entity` mit dem Typ `Entity` (Struct).
 
-Ein **Struct** ist dabei ein benutzerdefinierter Datentyp, mit welchem man mehrere Werte (Felder) logisch zusammenfassen kann und man für diesen Datentyp aufrufbare Methoden definieren kann.
+
+Ein **Struct** ist dabei ein benutzerdefinierter Datentyp, mit dem sich mehrere Werte (Felder) logisch zusammenfassen lassen. Zudem können für diesen Datentyp aufrufbare Methoden definiert werden.
 
 Über einigen Structs steht dabei auch `#[derive(...)]`. Dies ist ein Attribut, womit Rust signalisiert wird, welche bestimmten Standard-Implementierungen („Ableitungen“), wie z.B. Kopieren (Clone) eines Structs, generiert werden sollen. Sie sind sehr ähnlich zu Dekoratoren in Python.
 
