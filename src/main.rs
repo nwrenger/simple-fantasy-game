@@ -7,7 +7,10 @@ use std::{
     path::PathBuf,
 };
 
-use console_utils::input::{reveal, select, spinner, SpinnerType};
+use console_utils::{
+    input::{reveal, select, spinner, SpinnerType},
+    styled::{Color, StyledText},
+};
 use game::*;
 use serde::{Deserialize, Serialize};
 
@@ -71,7 +74,11 @@ impl Default for PlayerType {
 fn main() {
     // Coole intro Scene
     reveal(
-        "Simple Fantasy Game Emulator von Nils Wrenger\n",
+        &format!(
+            "{} Emulator von {}\n",
+            StyledText::new("Simple Fantasy Game").fg(Color::Magenta),
+            StyledText::new("Nils Wrenger").fg(Color::Red)
+        ),
         TIME_BETWEEN,
     );
     spinner(1.5, SpinnerType::Dots);
